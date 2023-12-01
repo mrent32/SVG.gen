@@ -1,6 +1,6 @@
-const inquirer = require('inquirer')
-const fs = require('fs')
-const generateShapes = require('./lib/generateShapes')
+import inquirer from "inquirer";
+import fs from "fs";
+import Shape from "./lib/generateShapes.js";
 
 
 const questions = [
@@ -34,6 +34,6 @@ const init = () => {
     inquirer.prompt(questions)
     .then((responses)=> {
         console.log('Generating SVG file')
-        writeToFile('./SVG.png', generateShapes)
-    })
+        writeToFile('./SVG.png', Shape)
+    })    
 }
