@@ -8,17 +8,17 @@ const questions = [
     {
         type: 'input',
         name: 'text',
-        message: 'Text: Enter up to three(3) characters',
+        message: 'Text: Enter up to three(3) characters.',
     },
     {
         type: 'input',
         name: 'textColor',
-        message: 'Text-color: Enter a color keyword or hexadecimal number',
+        message: 'Text-color: Enter a color keyword or hexadecimal number.',
     },
     {
         type: 'input',
         name: 'shapeColor',
-        message: 'Shape Color: Enter a color keyword or hexadecimal number',
+        message: 'Shape Color: Enter a color keyword or hexadecimal number.',
     },
     {
         type: 'list',
@@ -26,11 +26,6 @@ const questions = [
         message: 'Select which image you would like.',
         choices: ['Circle', 'Square', 'Triangle'],
     },
-    // {
-    //     type: 'input',
-    //     name: 'filename',
-    //     message: 'Give your logo a name.',
-    // },
 ];
 function writeToFile(fileName, data) {
    return fs.writeFileSync(path.join(process.cwd(), "/Examples/", fileName), data)
